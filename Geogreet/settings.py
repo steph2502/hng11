@@ -26,8 +26,8 @@ SECRET_KEY = 'django-insecure-9oa38wt^gin75(d^nt)zga)@y3%j_ncoj0_)s(4t=(q-ehzi(3
 DEBUG = True
 # import os
 
-# APP_NAME = os.environ.get("FLY_helloapp")
-# ALLOWED_HOSTS = [f"{helloapp}.fly.dev"]
+
+ ALLOWED_HOSTS = ['.vercel.app']
 
 
 # Application definition
