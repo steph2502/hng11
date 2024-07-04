@@ -27,7 +27,7 @@ DEBUG = True
 # import os
 
 
- ALLOWED_HOSTS = ['*']
+ ALLOWED_HOSTS = ['.vercel.app', '127.0.0.1']
                 
 
 
