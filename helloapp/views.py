@@ -13,8 +13,8 @@ def hello(request):
     client_ip = request.META.get('REMOTE_ADDR')
 
 
-    # if client_ip == '127.0.0.1':
-    #     client_ip = '8.8.8.8'
+    if client_ip == '127.0.0.1':
+        client_ip = '8.8.8.8'
 
     
     location_response = requests.get(f"http://ip-api.com/json/{client_ip}")
