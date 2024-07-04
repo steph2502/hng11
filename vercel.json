@@ -1,0 +1,12 @@
+{
+    "version": 2,
+    "builds": [
+      { "src": "Geogreet/wsgi.py", "use": "@vercel/python" },
+      { "src": "Geogreet/static/**/*", "use": "@vercel/static" }
+    ],
+    "routes": [
+      { "src": "/static/(.*)", "dest": "/Geogreet/static/$1" },
+      { "src": "/(.*)", "dest": "Geogreet/wsgi.py" }
+    ]
+  }
+  
