@@ -27,7 +27,7 @@ DEBUG = True
 # import os
 
 
- ALLOWED_HOSTS = ['hng11-qpy1.vercel.app']
+ ALLOWED_HOSTS = ['.vercel.app']
 
 
 # Application definition
