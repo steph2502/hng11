@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/5.0/ref/settings/
 """
 
 from pathlib import Path
+import os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -20,14 +21,14 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/5.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-9oa38wt^gin75(d^nt)zga)@y3%j_ncoj0_)s(4t=(q-ehzi(3'
+SECRET_KEY = os.getenv('django-insecure-9oa38wt^gin75(d^nt)zga)@y3%j_ncoj0_)s(4t=(q-ehzi(3')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = os.getenv('DEBUG','True') == 'True'
 # import os
 
 
- ALLOWED_HOSTS = ['.vercel.app', '127.0.0.1']
+ ALLOWED_HOSTS = os.getenv('ALLOWED_HOSTS', '.vercel.app,127.0.0.1').split(',')
                 
 
 
