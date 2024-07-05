@@ -1,15 +1,75 @@
-.vercel
-*.log
-*.pyc
-__pycache__
-db.sqlite3
-media
+# Ignore virtual environment
+env/
 
-# Environments 
-.env 
-.venv 
-env/ 
-venv/ 
-ENV/ 
-env.bak/ 
-venv.bak/ 
+# Ignore Python compiled files
+*.pyc
+__pycache__/
+
+# Ignore SQLite database file
+db.sqlite3
+
+# Ignore Django static and media files
+/staticfiles/
+/media/
+
+# Ignore Django secret key file (if used)
+secret_key.txt
+
+# Ignore IDE specific files
+.vscode/
+.idea/
+
+# Ignore environment variables files
+.env
+
+# Ignore macOS specific files
+.DS_Store
+
+# Ignore Windows specific files
+Thumbs.db
+
+# Ignore deployment files
+*.log
+*.pot
+*.py[cod]
+*.so
+
+# Ignore test coverage reports
+htmlcov/
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+
+# Ignore Jupyter Notebook checkpoints
+.ipynb_checkpoints
+
+# Ignore mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Ignore pyenv
+.python-version
+
+# Ignore pipenv
+pipenv/
+pipfile.lock
+
+# Ignore celery beat schedule file
+celerybeat-schedule
+
+# Ignore backup files
+*~
+
+# Ignore docker files
+*.bak
+*.swp
+
+
+
+
